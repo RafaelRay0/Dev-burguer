@@ -1,0 +1,137 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image:url(img/download\ \(3\).jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.header-logo img {
+    width: 130px;
+}
+
+.container-buttons {
+    height: 50px;
+    margin: 80px 60px 50px;
+    display: flex;
+    align-items: center;
+}
+
+.div-input {
+    display: flex;
+    margin-left: 50px;
+}
+
+.icon {
+    width: 40px;
+    cursor: pointer;
+}
+
+.input-descont {
+    display: flex;
+    align-items: center;
+    margin: 40px; 
+}
+
+#send {
+    cursor: pointer;
+    outline: none;
+}
+
+#descont {
+    outline: none;
+}
+
+#descont::placeholder {
+    padding-left: 5px;
+}
+
+.icon-Zap {
+    width: 50px;
+    position: fixed;
+    bottom: 15px;
+    right: 25px;
+    cursor: pointer;
+}
+
+.header-butons {
+    display: flex;
+    gap: 30px;
+}
+
+.container-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.container-buttons .butons-juntos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 250px;
+}
+
+button {
+    background-color: #79cb15;
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 110px;
+    box-shadow: #000 0px 20px 30px -10px;
+}
+
+button:hover {
+    opacity: .8;
+    transition: .2s;
+}
+
+ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    gap: 20px;
+    justify-content: center;
+}
+
+li {
+    border: 2px solid #654002;
+    border-radius: 5px;
+    padding: 5px;
+    color: #fff;
+    box-shadow: #000 0px 20px 30px -10px;
+}
+
+img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+p {
+    color: #fff;
+}
+
+.item-price {
+    font-weight: bold;
+    color:#79cb15;
+}
+
+.box-preta {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+}
