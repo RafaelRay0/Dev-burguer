@@ -53,19 +53,8 @@ descontCupom.addEventListener('click', function(e) {
         alert("Cupom invalido")
     )
 })
-/*
-// MAP
-function descontValue() {
 
-    const descont = menuOptions.map((itens) => ({
 
-        ...itens,
-        price: itens.price * 0.9,
-
-    }))
-newCardapio(descont)
-}
-*/
 // REDUCE
 function totalSum() {
 
@@ -86,7 +75,7 @@ function totalSum() {
 //FILTER
 function filterTotal() {
 
-    const filtraçon = menuOptions.filter(number => number.vegan)
+    const filtraçon = Veganos.filter(number => number.vegan)
 
     newCardapio(filtraçon)
 }
