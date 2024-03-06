@@ -6,6 +6,7 @@ const buttonMap = document.querySelector('.button-Map')
 const buttonReduce = document.querySelector('.button-Reduce')
 const buttonFilter = document.querySelector('.button-Filter')
 const descontCupom = document.querySelector('#send')
+const bebidas = document.querySelector(".button-Bebidas")
 
 
 //CONVERT MOEDAS
