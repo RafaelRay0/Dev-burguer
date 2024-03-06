@@ -47,8 +47,8 @@ descontCupom.addEventListener('click', function(e) {
             ...itens,
             price: itens.price * 0.9,
     
-        }))
-    newCardapio(descont)
+        })) 
+    newCardapio(descont) 
     }else (
         alert("Cupom invalido")
     )
