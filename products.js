@@ -23,16 +23,17 @@ const Veganos = [
     { name: 'Purple Burger', price: 60, vegan: true, src: './img-veganos/PurpleBurger.jpeg' },
     { name: 'X-Batata', price: 50, vegan: true, src: './img-veganos/xvegan.png' },
     
+    
     ]
 
 const bebidas = [
     
-    { name: 'X-Vegan', price: 34, vegan: true, src: './img.bebidas/Fanta-blu.jpg' },
-    { name: 'X-Duplo', price: 39, vegan: true, src: './img.bebidas/Fanta-blu.jpg' },
-    { name: 'Black Monster', price: 50, vegan: true, src: './img.bebidas/Fanta-blu.jpg' },
-    { name: 'Vegan tradicional', price: 55, vegan: true, src:'./img.bebidas/Fanta-blu.jpg' },
-    { name: 'Green-Monster', price: 85, vegan: true, src: './img.bebidas/Fanta-blu.jpg' },
-    { name: 'Duplo-Enpanado', price: 40, vegan: true, src: './img.bebidas/Fanta-blu.jpg' },
-    { name: 'Purple Burger', price: 60, vegan: true, src: './img.bebidas/Fanta-blu.jpg' },
-    { name: 'X-Batata', price: 50, vegan: true, src: './img.bebidas/Fanta-blu.jpg' },
+    { name: 'coca', price: 34, src: './img.bebidas/Fanta-blu.jpg' },
+    { name: 'guarana', price: 39, src: './img.bebidas/Fanta-blu.jpg' },
+    { name: 'Monster', price: 50, src: './img.bebidas/Fanta-blu.jpg' },
+    { name: 'peps', price: 55, src:'./img.bebidas/Fanta-blu.jpg' },
+    { name: 'pirulito', price: 85, src: './img.bebidas/Fanta-blu.jpg' },
+    { name: 'bala', price: 40, src: './img.bebidas/Fanta-blu.jpg' },
+    { name: 'purple', price: 60, src: './img.bebidas/Fanta-blu.jpg' },
+    { name: 'cafe', price: 50, src: './img.bebidas/Fanta-blu.jpg' },
 ]

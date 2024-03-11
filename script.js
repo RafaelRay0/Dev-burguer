@@ -6,8 +6,7 @@ const buttonMap = document.querySelector('.button-Map')
 const buttonReduce = document.querySelector('.button-Reduce')
 const buttonFilter = document.querySelector('.button-Filter')
 const descontCupom = document.querySelector('#send')
-const bebidas = document.querySelector(".button-Bebidas")
-
+const buttonbebidas = document.querySelector(".button-Bebidas")
 
 //CONVERT MOEDAS
 function newMoedas(newValor) {
@@ -50,11 +49,10 @@ descontCupom.addEventListener('click', function(e) {
     
         })) 
     newCardapio(descont) 
-    }else (
-        alert("Cupom invalido")
-    )
+    } else {
+        alert ('Cupom invalido')
+    }
 })
-
 
 // REDUCE
 function totalSum() {
@@ -80,10 +78,15 @@ function filterTotal() {
 
     newCardapio(filtraçon)
 }
+
+function drinks() {
+ newCardapio(bebidas)
+}
 // EVENTOS DE CLICK
 buttonFor.addEventListener('click',()=> newCardapio(menuOptions))
 buttonReduce.addEventListener('click', totalSum)
 buttonFilter.addEventListener('click', filterTotal)
+buttonbebidas.addEventListener('click', drinks)
 
 
 
