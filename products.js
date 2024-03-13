@@ -29,11 +29,11 @@ const Veganos = [
 const bebidas = [
     
     { name: 'coca', price: 34, src: './img.bebidas/Fanta-blu.jpg' },
-    { name: 'guarana', price: 39, src: './img.bebidas/Fanta-blu.jpg' },
-    { name: 'Monster', price: 50, src: './img.bebidas/Fanta-blu.jpg' },
-    { name: 'peps', price: 55, src:'./img.bebidas/Fanta-blu.jpg' },
-    { name: 'pirulito', price: 85, src: './img.bebidas/Fanta-blu.jpg' },
-    { name: 'bala', price: 40, src: './img.bebidas/Fanta-blu.jpg' },
-    { name: 'purple', price: 60, src: './img.bebidas/Fanta-blu.jpg' },
-    { name: 'cafe', price: 50, src: './img.bebidas/Fanta-blu.jpg' },
+    { name: 'guarana', price: 39, src: './img.bebidas/Guaraná.jpg' },
+    { name: 'Monster', price: 50, src: './img.bebidas/Limão.jpg' },
+    { name: 'peps', price: 55, src:'./img.bebidas/monster.jpg' },
+    { name: 'pirulito', price: 85, src: './img.bebidas/Pomo-De-Ouro.jpg' },
+    { name: 'bala', price: 40, src: './img.bebidas/Sprite.jpg' },
+    { name: 'purple', price: 60, src: './img.bebidas/𝘊𝘰𝘲𝘶𝘪𝘯𝘩𝘢.jpeg' },
+    { name: 'cafe', price: 50, src: './img.bebidas/pepsi.jpeg' },
 ]
