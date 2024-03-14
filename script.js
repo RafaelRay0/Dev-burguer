@@ -42,7 +42,8 @@ descontCupom.addEventListener('click', function(e) {
     const cupom = document.querySelector("#descont")
     const value = cupom.value
     if (value === 'desconto10') {
-        const descont = menuOptions.map((itens) => ({
+        
+        const descont = menuOptions.map(itens => ({
 
             ...itens,
             price: itens.price * 0.9,
