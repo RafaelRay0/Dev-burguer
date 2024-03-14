@@ -9,6 +9,7 @@
 }
 
 body {
+   
     background-image:url(img/download\ \(3\).jpg);
     background-attachment: fixed;
     background-size: cover;
@@ -69,6 +70,7 @@ body {
 }
 
 .container-buttons {
+    height: 30px;
     display: flex;
     justify-content: center;
 }
@@ -98,6 +100,7 @@ button:hover {
 }
 
 ul {
+    
     list-style: none;
     display: grid;
     grid-template-columns: 200px 200px 200px 200px;

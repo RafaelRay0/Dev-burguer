@@ -28,12 +28,12 @@ const Veganos = [
 
 const bebidas = [
     
-    { name: 'coca', price: 34, src: './img.bebidas/Fanta-blu.jpg' },
-    { name: 'guarana', price: 39, src: './img.bebidas/Guaraná.jpg' },
-    { name: 'Monster', price: 50, src: './img.bebidas/Limão.jpg' },
-    { name: 'peps', price: 55, src:'./img.bebidas/monster.jpg' },
-    { name: 'pirulito', price: 85, src: './img.bebidas/Pomo-De-Ouro.jpg' },
-    { name: 'bala', price: 40, src: './img.bebidas/Sprite.jpg' },
-    { name: 'purple', price: 60, src: './img.bebidas/𝘊𝘰𝘲𝘶𝘪𝘯𝘩𝘢.jpeg' },
-    { name: 'cafe', price: 50, src: './img.bebidas/pepsi.jpeg' },
+    { name: 'Fanta-Blue', price: 7, src: './img.bebidas/Fanta-blu.jpg' },
+    { name: 'Guaraná', price: 5.50, src: './img.bebidas/Guaraná.jpg' },
+    { name: 'H2O-Limão', price: 8.25, src: './img.bebidas/Limão.jpg' },
+    { name: 'Monster', price: 9.99, src:'./img.bebidas/monster.jpg' },
+    { name: 'Pomo-de-Ouro', price: 12.75, src: './img.bebidas/Pomo-De-Ouro.jpg' },
+    { name: 'Sprite', price: 6.45, src: './img.bebidas/Sprite.jpg' },
+    { name: 'Coca-Cola', price: 8.50, src: './img.bebidas/𝘊𝘰𝘲𝘶𝘪𝘯𝘩𝘢.jpeg' },
+    { name: 'Pepsi', price: 7.10, src: './img.bebidas/pepsi.jpeg' },
 ]
