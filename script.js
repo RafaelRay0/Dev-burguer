@@ -1,9 +1,11 @@
 
 // MAPEAMENTOS HTML
 const valueUl = document.querySelector('.ul-li')
+const titulo = document.querySelector('.titulo')
+const valueform = document.querySelector('.form')
 const buttonFor = document.querySelector('.button-Foreach')
 const buttonMap = document.querySelector('.button-Map')
-const buttonReduce = document.querySelector('.button-Reduce')
+const buttonTradicion = document.querySelector('.button-tradicion')
 const buttonFilter = document.querySelector('.button-Filter')
 const descontCupom = document.querySelector('#send')
 const buttonbebidas = document.querySelector(".button-Bebidas")
@@ -19,42 +21,37 @@ function newMoedas(newValor) {
 
 //FOREACH
 function newCardapio(showAll) {
-
+let newformulare = ''
 let newElement = ''
+let h1 = ''
     const mostrarTudo = showAll.forEach((element) => {
 
         newElement  += ` 
          <li>
               <img src=${element.src}>
               <p>${element.name}</p>
-              <p class="item-price"> ${newMoedas(element.price)}</p>
+              <p class="item-price"> ${newMoedas(element.price) } -> ${newMoedas(element.price * 0.9) }</p>
          </li>
          
          `
+         h1 =`<h1>Digite aqui seu pedido</h1>`
+        newformulare = `
+        <input type="text" name="name" id="" placeholder="Seu nome completo:" required>
+        <input type="number" name="number" id="" placeholder="Numero da mesa:" required>
+        <textarea name="message" id="" placeholder="Seu pedido:" required></textarea>
+        <div class="rrsantos-enviar"><input type="submit" value="ENVIAR"></div>
+      
+        <input type="hidden" name="accessKey" value="d278307f-c4a2-4648-ae00-059f02543851">
+        <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/Obrigado.html">
+    `
     })
 
    valueUl.innerHTML = newElement
+   valueform.innerHTML = newformulare
+   titulo.innerHTML = h1
 }
 
-descontCupom.addEventListener('click', function(e) {
-    e.preventDefault();
-
-    const cupom = document.querySelector("#descont")
-    const value = cupom.value
-    if (value === 'desconto10') {
-        
-        const descont = menuOptions.map(itens => ({
-
-            ...itens,
-            price: itens.price * 0.9,
-    
-        })) 
-    newCardapio(descont) 
-    } else {
-        alert ('Cupom invalido')
-    }
-})
-
+/*
 // REDUCE
 function totalSum() {
 
@@ -62,30 +59,39 @@ function totalSum() {
 
        return acc + element.price 
         
-    }, 0)
+    }, 0) 
     
     valueUl.innerHTML = ` 
     <li>
-        A soma de todos os meus itens do menu é ${valueSum}
+        A soma de todos os meus itens do menu é ${valueSum.toFixed(2)}
     </li>
     
     `
 }
-
+*/
 //FILTER
 function filterTotal() {
 
-    const filtraçon = Veganos.filter(number => number.vegan)
-
+    const filtraçon = menuOptions.filter(number => number.vegan)
+    
     newCardapio(filtraçon)
 }
 
 function drinks() {
- newCardapio(bebidas)
+
+    const bebidas = menuOptions.filter(drinks=> drinks.drinks)
+
+    newCardapio(bebidas)
+}
+
+function tradicion() {
+    const tradicionais = menuOptions.filter(element => element.vegan === false)
+
+    newCardapio(tradicionais)
 }
 // EVENTOS DE CLICK
 buttonFor.addEventListener('click',()=> newCardapio(menuOptions))
-buttonReduce.addEventListener('click', totalSum)
+buttonTradicion.addEventListener('click', tradicion)
 buttonFilter.addEventListener('click', filterTotal)
 buttonbebidas.addEventListener('click', drinks)
 
