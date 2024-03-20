@@ -53,13 +53,18 @@ body {
     gap: 30px;
 }
 
+.header-butons :hover {
+    transform: scale(1.05);
+    color: rgb(121, 230, 13);
+}
+
 .container-buttons {
     height: 30px;
     display: flex;
     justify-content: center;
 }
 
-.pedido{
+#pedido{
     color: #000000c6;
     text-decoration: none;
 }
@@ -109,6 +114,9 @@ li {
     color: #ffffff;
     background-color: #000000b6;
     box-shadow: #ffffff3e 0px 20px 30px -10px;
+}
+li:hover {
+    transform: scale(1.05);
 }
 
 img {

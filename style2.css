@@ -19,13 +19,25 @@
  }
 
  .icon-amburguer {
+   position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 100px;
     gap: 20px;
+    animation: flutuar 2s ease-in-out infinite alternate;
  }
+
+ @keyframes flutuar {
+   0% {
+       top: 0;
+   }
+
+   100% {
+       top: 10px;
+   }
+}
 
  .button {
     height: 40px;
@@ -40,6 +52,8 @@
  }
  .button:hover {
     opacity: .8;
+    
+    color: #fff;
  }
  .button:active {
     opacity: .4;
