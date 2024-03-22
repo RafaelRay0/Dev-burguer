@@ -1,73 +1,83 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
 
 .box-mascara {
-    position: fixed;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+   position: fixed;
+   top: 0;
+   height: 100%;
+   width: 100%;
+   z-index: -1;
+   background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
 }
+
 .box-video {
-    position: fixed;
-    top: 0;
-    z-index: -1;
- }
+   position: fixed;
+   top: 0;
+   z-index: -1;
+}
 
- .icon-amburguer {
+.icon-amburguer {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin-top: 100px;
+   gap: 20px;
+
+}
+
+#icon {
    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 100px;
-    gap: 20px;
-    animation: flutuar 2s ease-in-out infinite alternate;
- }
+   animation: flutuar 2s ease-in-out infinite alternate;
+}
 
- @keyframes flutuar {
+@keyframes flutuar {
    0% {
-       top: 0;
+      top: 0;
    }
 
    100% {
-       top: 10px;
+      top: 10px;
    }
 }
 
- .button {
-    height: 40px;
-    width: 100px;
-    font-size: 18px;
-    font-weight: 700;
-    border-radius: 5px;
-    background-color: rgba(210, 138, 30, 0.859);
-    border: none;
-    box-shadow: #000 0px 20px 30px -10px;
-    cursor: pointer;
- }
- .button:hover {
-    opacity: .8;
-    
-    color: #fff;
- }
- .button:active {
-    opacity: .4;
- }
+.button {
+   height: 40px;
+   width: 100px;
+   font-size: 18px;
+   font-weight: 700;
+   border-radius: 5px;
+   background-color: rgba(210, 138, 30, 0.859);
+   margin-top: 25px;
+   border: none;
+   box-shadow: #000 0px 20px 30px -10px;
+   cursor: pointer;
+}
 
- .linkar{
-    color: #000000da;
-    text-decoration: none;
-    outline: none;
- }
+.button:hover {
+   opacity: .8;
+   color: #fff;
+}
 
- .offdescont {
+.button:active {
+   opacity: .4;
+}
+
+.linkar {
+   color: #000000da;
+   text-decoration: none;
+   outline: none;
+}
+
+.offdescont {
    position: fixed;
    bottom: 10px;
    left: 10px;
- }
+}
 
+.offdescont:hover {
+   opacity: 0.8;
+}

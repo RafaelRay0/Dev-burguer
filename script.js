@@ -30,7 +30,8 @@ let h1 = ''
          <li>
               <img src=${element.src}>
               <p>${element.name}</p>
-              <p class="item-price"> ${newMoedas(element.price) } -> ${newMoedas(element.price * 0.9) }</p>
+              <p class="item-descont">${element.descont}</p>
+              <p class="item-price"> ${newMoedas(element.price) } - ${newMoedas(element.price * 0.9) }</p>
          </li>
          
          `
