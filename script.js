@@ -37,13 +37,13 @@ function newCardapio(showAll) {
          `
         h1 = `<h1>Digite aqui seu pedido</h1>`
         newformulare = `
-        <input type="text" name="name" id="" placeholder="Seu nome completo:" required>
-        <input type="number" name="number" id="" placeholder="Numero da mesa:" required>
-        <textarea name="message" id="" placeholder="Seu pedido:" required></textarea>
+        <input type="text" name="name"  placeholder="Seu nome completo:" required>
+        <input type="number" name="number"  placeholder="Numero da mesa:" required>
+        <textarea name="message" placeholder="Seu pedido:" required></textarea>
         <div class="rrsantos-enviar"><input type="submit" value="ENVIAR"></div>
       
-        <input type="hidden" name="accessKey" value="d278307f-c4a2-4648-ae00-059f02543851">
-        <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/Obrigado.html">
+        <input type="hidden" name="accessKey" value="d8ae0469-d2a7-4c91-b11e-e97c61a8d242"
+        <input type="hidden" name="redirectTo" value="http://127.0.0.1:5502/obrigado.html">
     `
     })
 

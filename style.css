@@ -57,8 +57,8 @@ body {
 
 .header-butons :hover {
     transform: scale(1.05);
-    color: rgba(122, 230, 13, 0.871);
-    box-shadow: #2bd6043e 0px 20px 30px -10px;
+    color: #ffffffd5;
+    box-shadow: #0000003e 0px 20px 30px -10px;
 }
 
 .container-buttons {
@@ -85,7 +85,6 @@ body {
     gap: 200px;
     box-shadow: #ffffff3e 0px 20px 30px -10px;
 }
-
 button {
     background-color: #635914;
     border: none;
@@ -190,6 +189,12 @@ form textarea {
     border-radius: 15px;
     color: #fff;
     font-size: 18px;
+   
+}
+
+form textarea {
+    resize: none;
+    height: 150px;
 }
 
 form input::placeholder {
@@ -197,7 +202,6 @@ form input::placeholder {
 }
 
 form textarea::placeholder {
-    resize: none;
     color: #ffffffcb;
 }
 
@@ -208,9 +212,17 @@ form .rrsantos-enviar {
 
 form .rrsantos-enviar input {
     width: 100px;
-    background-color: #625724d6;
+    background-color: #635914;
     color: #000;
     margin-bottom: 25px;
     font-weight: 700;
     cursor: pointer;
+}
+form .rrsantos-enviar input:hover {
+    transform: scale(1.05);
+    transition: .2s;
+    box-shadow: #000 0px 20px 30px -10px;
+}
+form .rrsantos-enviar input:active {
+    opacity: .4;
 }

@@ -58,8 +58,10 @@
 }
 
 .button:hover {
+   transform: scale(1.05);
+   transition: .2s;
    opacity: .8;
-   color: #fff;
+   background-color: rgb(134, 98, 7);
 }
 
 .button:active {
