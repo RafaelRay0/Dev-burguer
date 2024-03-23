@@ -1,3 +1,5 @@
+
+/* GLOBAIS */ 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
 
 * {
@@ -19,6 +21,7 @@ body {
     background-position: center;
 }
 
+/* CABEÇALHO */
 .header-logo img {
     width: 130px;
 }
@@ -100,6 +103,7 @@ button:hover {
     transition: .2s;
 }
 
+/* CORPO */
 ul {
     list-style: none;
     display: grid;
@@ -143,10 +147,15 @@ h1 {
     color: #ffffff9c;
 }
 
+span {
+    color: rgb(161, 40, 13);
+}
+
 .item-descont {
     font-size: 13px;
     color: rgb(98, 185, 11);
 }
+
 .box-preta {
     position: fixed;
     top: 0;
@@ -155,7 +164,7 @@ h1 {
     z-index: -1;
     background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
 }
-
+/*  FORMULARIO */
 section.formulario {
     margin-top: 20px;
     padding: 80px 4%;

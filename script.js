@@ -13,29 +13,29 @@ const buttonbebidas = document.querySelector(".button-Bebidas")
 //CONVERT MOEDAS
 function newMoedas(newValor) {
 
- const convert = newValor.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
-   
- return convert
-    
+    const convert = newValor.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });
+
+    return convert
+
 }
 
 //FOREACH
 function newCardapio(showAll) {
-let newformulare = ''
-let newElement = ''
-let h1 = ''
+    let newformulare = ''
+    let newElement = ''
+    let h1 = ''
     const mostrarTudo = showAll.forEach((element) => {
 
-        newElement  += ` 
+        newElement += ` 
          <li>
               <img src=${element.src}>
               <p>${element.name}</p>
               <p class="item-descont">${element.descont}</p>
-              <p class="item-price"> ${newMoedas(element.price) } - ${newMoedas(element.price * 0.9) }</p>
+              <p class="item-price"> ${newMoedas(element.price)} <span> -> </span> ${newMoedas(element.price * 0.9)}</p>
          </li>
          
          `
-         h1 =`<h1>Digite aqui seu pedido</h1>`
+        h1 = `<h1>Digite aqui seu pedido</h1>`
         newformulare = `
         <input type="text" name="name" id="" placeholder="Seu nome completo:" required>
         <input type="number" name="number" id="" placeholder="Numero da mesa:" required>
@@ -47,9 +47,9 @@ let h1 = ''
     `
     })
 
-   valueUl.innerHTML = newElement
-   valueform.innerHTML = newformulare
-   titulo.innerHTML = h1
+    valueUl.innerHTML = newElement
+    valueform.innerHTML = newformulare
+    titulo.innerHTML = h1
 }
 
 /*
@@ -74,13 +74,13 @@ function totalSum() {
 function filterTotal() {
 
     const filtraçon = menuOptions.filter(number => number.vegan)
-    
+
     newCardapio(filtraçon)
 }
 
 function drinks() {
 
-    const bebidas = menuOptions.filter(drinks=> drinks.drinks)
+    const bebidas = menuOptions.filter(drinks => drinks.drinks)
 
     newCardapio(bebidas)
 }
@@ -91,7 +91,7 @@ function tradicion() {
     newCardapio(tradicionais)
 }
 // EVENTOS DE CLICK
-buttonFor.addEventListener('click',()=> newCardapio(menuOptions))
+buttonFor.addEventListener('click', () => newCardapio(menuOptions))
 buttonTradicion.addEventListener('click', tradicion)
 buttonFilter.addEventListener('click', filterTotal)
 buttonbebidas.addEventListener('click', drinks)
