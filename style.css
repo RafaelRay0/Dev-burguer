@@ -198,11 +198,11 @@ form textarea {
 }
 
 form input::placeholder {
-    color: #ffffffcb;
+    color: #ffffff8b;
 }
 
 form textarea::placeholder {
-    color: #ffffffcb;
+    color: #ffffff8b;
 }
 
 form .rrsantos-enviar {
