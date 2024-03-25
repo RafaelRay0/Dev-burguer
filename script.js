@@ -43,7 +43,7 @@ function newCardapio(showAll) {
         <div class="rrsantos-enviar"><input type="submit" value="ENVIAR"></div>
       
         <input type="hidden" name="accessKey" value="d8ae0469-d2a7-4c91-b11e-e97c61a8d242">
-        <input type="hidden" name="redirectTo" value="">
+        <input type="hidden" name="redirectTo" value="http://127.0.0.1:5502/obrigado.html">
     `
     })
 
