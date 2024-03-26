@@ -217,6 +217,7 @@ form .rrsantos-enviar input {
     margin-bottom: 25px;
     font-weight: 700;
     cursor: pointer;
+    outline: none;
 }
 form .rrsantos-enviar input:hover {
     transform: scale(1.05);
