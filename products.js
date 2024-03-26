@@ -21,7 +21,7 @@ const menuOptions = [
     { name: 'Fanta-Blue', descont: 'PROMOÇÃO', drinks: true, price: 7, src: './img.bebidas/Fanta-blu.jpg' },
     { name: 'Guaraná', descont: 'PROMOÇÃO', drinks: true, price: 5.50, src: './img.bebidas/Guaraná.jpg' },
     { name: 'H2O-Limão', descont: 'PROMOÇÃO', drinks: true, price: 8.25, src: './img.bebidas/Limão.jpg' },
-    { name: 'Monster', descont: 'PROMOÇÃO', drinks: true, price: 9.99, src:'./img.bebidas/monster.jpg' },
+    { name: 'Monster', descont: 'PROMOÇÃO', drinks: true, price: 9.99, src:'./img-veganos/EasyVeggieBurgerRecipe.jpeg' },
     { name: 'Pomo-de-Ouro', descont: 'PROMOÇÃO', drinks: true, price: 12.75, src: './img.bebidas/Pomo-De-Ouro.jpg' },
     { name: 'Sprite', descont: 'PROMOÇÃO', drinks: true, price: 6.45, src: './img.bebidas/Sprite.jpg' },
     { name: 'Coca-Cola', descont: 'PROMOÇÃO', drinks: true, price: 8.50, src: './img.bebidas/𝘊𝘰𝘲𝘶𝘪𝘯𝘩𝘢.jpeg' },
