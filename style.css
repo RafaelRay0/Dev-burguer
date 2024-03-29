@@ -208,6 +208,7 @@ form textarea::placeholder {
 form .rrsantos-enviar {
     margin-top: 20px;
     text-align: center;
+    outline: none;
 }
 
 form .rrsantos-enviar input {
@@ -217,7 +218,6 @@ form .rrsantos-enviar input {
     margin-bottom: 25px;
     font-weight: 700;
     cursor: pointer;
-    outline: none;
 }
 form .rrsantos-enviar input:hover {
     transform: scale(1.05);
