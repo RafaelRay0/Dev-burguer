@@ -1,5 +1,4 @@
-
-/* GLOBAIS */ 
+/* GLOBAIS */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
 
 * {
@@ -85,6 +84,7 @@ body {
     gap: 200px;
     box-shadow: #ffffff3e 0px 20px 30px -10px;
 }
+
 button {
     background-color: #635914;
     border: none;
@@ -163,6 +163,7 @@ span {
     z-index: -1;
     background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
 }
+
 /*  FORMULARIO */
 section.formulario {
     margin-top: 20px;
@@ -189,7 +190,7 @@ form textarea {
     border-radius: 15px;
     color: #fff;
     font-size: 18px;
-   
+
 }
 
 form textarea {
@@ -219,15 +220,33 @@ form .rrsantos-enviar input {
     font-weight: 700;
     cursor: pointer;
 }
+
 form .rrsantos-enviar input:hover {
     transform: scale(1.05);
     transition: .2s;
     box-shadow: #000 0px 20px 30px -10px;
 }
+
 form .rrsantos-enviar input:active {
     opacity: .4;
 }
 
-@media screen and (max-width: 1020px) {
-    
+@media screen and (max-width: 1080px) {
+
+    .header-logo img {
+        margin-right: 200px;
+    }
+
+    ul {
+        grid-template-columns: 170px 170px;
+        gap: 10px;
+    }
+
+    .item-price {
+        font-weight: bold;
+        color: #ffffff9c;
+        font-size: 14px;
+    }
+
+  
 }
