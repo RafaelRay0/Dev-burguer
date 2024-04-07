@@ -239,7 +239,7 @@ form .rrsantos-enviar input:active {
 
     ul {
         grid-template-columns: 170px 170px;
-        gap: 10px;
+      
     }
 
     .item-price {
