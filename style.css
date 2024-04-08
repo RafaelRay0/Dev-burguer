@@ -1,5 +1,5 @@
 /* GLOBAIS */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
 
 * {
     margin: 0;
@@ -20,90 +20,64 @@ body {
     background-position: center;
 }
 
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
 /* CABEÇALHO */
-.header-logo img {
+
+header {
+    padding:40px 4% ;
+}
+
+.logo img {
     width: 130px;
 }
 
-.container-buttons {
-    height: 50px;
-    margin: 80px 60px 50px;
+header > .interface {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
-.icon {
-    width: 40px;
-    cursor: pointer;
-}
-
-#descont::placeholder {
-    padding-left: 5px;
-}
-
-.icon-Zap {
-    width: 50px;
-    position: fixed;
-    bottom: 15px;
-    right: 25px;
-    cursor: pointer;
-}
-
-.header-butons {
-    display: flex;
-    gap: 30px;
-}
-
-.header-butons :hover {
-    transform: scale(1.05);
-    color: #ffffffd5;
-    box-shadow: #0000003e 0px 20px 30px -10px;
-}
-
-.container-buttons {
-    height: 30px;
-    display: flex;
-    justify-content: center;
-}
-
-#pedido {
-    color: #000000c6;
+header a {
+    color: #ffffffca;
     text-decoration: none;
-}
-
-.container-buttons .butons-juntos {
-    background-color: #101010;
-    position: fixed;
-    width: 100vw;
-    height: 22vh;
-    padding-top: 25px;
-    margin-top: -50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 200px;
-    box-shadow: #ffffff3e 0px 20px 30px -10px;
-}
-
-button {
-    background-color: #635914;
-    border: none;
-    border-radius: 5px;
-    color: #000000e1;
-    padding: 10px;
-    cursor: pointer;
-    font-weight: bold;
-    width: 110px;
-    box-shadow: #ffffff2a 0px 20px 30px -10px;
-}
-
-button:hover {
-    opacity: .8;
+    display: inline-block;
     transition: .2s;
 }
 
+header a:hover {
+    color: rgb(98, 185, 11);
+    transform: scale(1.08);
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header .pedidos button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #eaa818d7;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+header .pedidos button:hover {
+    box-shadow: 2px 2px 8px #000000c6;
+}
+
 /* CORPO */
-ul {
+.ul-li {
     list-style: none;
     display: grid;
     grid-template-columns: 200px 200px 200px 200px;
@@ -111,7 +85,7 @@ ul {
     justify-content: center;
 }
 
-li {
+.order {
     border: 2px solid #2d2e2e;
     border-radius: 5px;
     padding: 5px;
@@ -120,10 +94,18 @@ li {
     box-shadow: #ffffff3e 0px 20px 30px -10px;
 }
 
-li:hover {
+.order:hover {
     transform: scale(1.05);
     transition: .2s;
     box-shadow: #04d6193e 0px 20px 30px -10px;
+}
+
+.icon-Zap {
+    width: 50px;
+    position: fixed;
+    bottom: 15px;
+    right: 25px;
+    cursor: pointer;
 }
 
 img {
@@ -171,7 +153,7 @@ section.formulario {
 }
 
 form {
-    max-width: 500px;
+    max-width: 300px;
     margin: 0px auto;
     display: flex;
     justify-content: center;
@@ -233,13 +215,22 @@ form .rrsantos-enviar input:active {
 
 @media screen and (max-width: 1080px) {
 
-    .header-logo img {
-        margin-right: 200px;
-    }
+/*Cabeçalho*/
 
+.header-butons {
+    display: none;
+}
+
+.header-logo img {
+    width: 110px;
+    margin-right: 220px;
+}
+
+
+/*Corpo*/
     ul {
         grid-template-columns: 170px 170px;
-      
+        gap: 10px;
     }
 
     .item-price {
@@ -248,5 +239,13 @@ form .rrsantos-enviar input:active {
         font-size: 14px;
     }
 
-  
+    form {
+        max-width: 300px;
+    }
+
+    form .rrsantos-enviar input {
+        margin-bottom: 50px;
+    }
+    
+    
 }

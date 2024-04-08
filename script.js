@@ -27,7 +27,7 @@ function newCardapio(showAll) {
     const mostrarTudo = showAll.forEach((element) => {
 
         newElement += ` 
-         <li>
+         <li class="order">
               <img src=${element.src}>
               <p>${element.name}</p>
               <p class="item-descont">${element.descont}</p>
