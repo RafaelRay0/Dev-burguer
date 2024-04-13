@@ -9,7 +9,9 @@ const buttonTradicion = document.querySelector('.button-tradicion')
 const buttonFilter = document.querySelector('.button-Filter')
 const descontCupom = document.querySelector('#send')
 const buttonbebidas = document.querySelector(".button-Bebidas")
-
+const abrirMenu = document.querySelector(".icon-list")
+const menu = document.querySelector(".menu-mobile")
+const overley = document.getElementById('overlay-menu')
 //CONVERT MOEDAS
 function newMoedas(newValor) {
 
@@ -52,24 +54,6 @@ function newCardapio(showAll) {
     titulo.innerHTML = h1
 }
 
-/*
-// REDUCE
-function totalSum() {
-
-    const valueSum = menuOptions.reduce((acc, element) => {
-
-       return acc + element.price 
-        
-    }, 0) 
-    
-    valueUl.innerHTML = ` 
-    <li>
-        A soma de todos os meus itens do menu é ${valueSum.toFixed(2)}
-    </li>
-    
-    `
-}
-*/
 //FILTER
 function filterTotal() {
 
@@ -90,11 +74,26 @@ function tradicion() {
 
     newCardapio(tradicionais)
 }
+
+//MENU-MOBILE
+abrirMenu.addEventListener('click', ()=> {
+    menu.classList.add('abrir')
+})
+
+menu.addEventListener('click', ()=> {
+    menu.classList.remove('abrir')
+})
+
+overley.addEventListener('click', ()=> {
+    menu.classList.remove('abrir')
+})
+
 // EVENTOS DE CLICK
 buttonFor.addEventListener('click', () => newCardapio(menuOptions))
 buttonTradicion.addEventListener('click', tradicion)
 buttonFilter.addEventListener('click', filterTotal)
 buttonbebidas.addEventListener('click', drinks)
+
 
 
 

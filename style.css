@@ -34,7 +34,7 @@ header {
     position: sticky;
     top: 0;
     background-color: #090909;
-    box-shadow: #ffffff3e 0px 20px 30px -10px;
+    box-shadow: #ffffff45 0px 20px 30px -10px;
 }
 
 .logo img {
@@ -57,16 +57,16 @@ header a {
     transition: .2s;
 }
 
-header a:hover {
+header nav.menu-desktop a:hover {
     color: rgb(98, 185, 11);
     transform: scale(1.08);
 }
 
-header nav ul {
+header  ul {
     list-style: none;
 }
 
-header nav ul li {
+header nav.menu-desktop ul li {
     display: inline-block;
     padding: 0 40px;
 }
@@ -84,7 +84,67 @@ header .pedidos button {
 header .pedidos button:hover {
     box-shadow: 2px 2px 8px #000000c6;
 }
+/* Menu Mobile */
 
+.menu-abrir img {
+    padding-right: 25px;
+}
+
+.menu-mobile {
+    background-color: rgb(31, 30, 30);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .4s;
+}
+.menu-mobile.abrir {
+    width: 70%;
+}
+
+.menu-mobile.abrir ~ .overlay-menu {
+    display: block;
+}
+
+.menu-mobile .mobile-fechar img {
+    width: 30px;
+    height: 30px;
+}
+
+.menu-mobile .mobile-fechar {
+    padding: 20px 6%;
+}
+
+.menu-mobile nav ul {
+    text-align: right;
+}
+
+.menu-mobile nav ul li a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+    display: block;
+}
+
+.menu-mobile nav ul li a:hover {
+    background-color: #eaa818d7;
+    color: #000;
+}
+
+.overlay-menu {
+    background-color: #000000be;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 88888;
+    display: none;
+}
 /* CORPO */
 
 .ul-li {
@@ -223,11 +283,14 @@ form .rrsantos-enviar input:active {
     opacity: .4;
 }
 
+.menu-abrir {
+    display: none;
+}
+
 @media screen and (max-width: 1080px) {
 
 /*Cabeçalho*/
-
-.header-butons {
+.menu-desktop, .pedidos {
     display: none;
 }
 
@@ -236,7 +299,9 @@ form .rrsantos-enviar input:active {
     margin-right: 220px;
 }
 
-
+.menu-abrir {
+    display: block;
+}
 /*Corpo*/
     ul {
         grid-template-columns: 170px 170px;
