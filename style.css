@@ -30,7 +30,7 @@ body {
 header {
     width: 100%;
     height: 180px;
-    padding:40px 4% ;
+    padding: 40px 4%;
     position: sticky;
     top: 0;
     background-color: #090909;
@@ -41,13 +41,17 @@ header {
     width: 130px;
 }
 
-header > .interface {
+.menu-abrir {
+    display: none;
+}
+
+header>.interface {
     width: 100vw;
     height: 120px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-   
+
 }
 
 header a {
@@ -62,7 +66,7 @@ header nav.menu-desktop a:hover {
     transform: scale(1.08);
 }
 
-header  ul {
+header ul {
     list-style: none;
 }
 
@@ -84,6 +88,7 @@ header .pedidos button {
 header .pedidos button:hover {
     box-shadow: 2px 2px 8px #000000c6;
 }
+
 /* Menu Mobile */
 
 .menu-abrir img {
@@ -101,11 +106,12 @@ header .pedidos button:hover {
     overflow: hidden;
     transition: .4s;
 }
+
 .menu-mobile.abrir {
     width: 70%;
 }
 
-.menu-mobile.abrir ~ .overlay-menu {
+.menu-mobile.abrir~.overlay-menu {
     display: block;
 }
 
@@ -145,6 +151,7 @@ header .pedidos button:hover {
     z-index: 88888;
     display: none;
 }
+
 /* CORPO */
 
 .ul-li {
@@ -283,28 +290,29 @@ form .rrsantos-enviar input:active {
     opacity: .4;
 }
 
-.menu-abrir {
-    display: none;
-}
 
 @media screen and (max-width: 1080px) {
 
-/*Cabeçalho*/
-.menu-desktop, .pedidos {
-    display: none;
-}
+    /*Cabeçalho*/
 
-.header-logo img {
-    width: 110px;
-    margin-right: 220px;
-}
+    .menu-desktop,
+    .pedidos {
+        display: none;
+    }
 
-.menu-abrir {
-    display: block;
-}
-/*Corpo*/
-    ul {
-        grid-template-columns: 170px 170px;
+    .header-logo img {
+        width: 110px;
+        margin-right: 220px;
+    }
+
+    .menu-abrir {
+        display: block;
+    }
+
+    /*Corpo*/
+
+    .ul-li {
+        grid-template-columns: 200px 200px;
         gap: 10px;
     }
 
@@ -321,6 +329,6 @@ form .rrsantos-enviar input:active {
     form .rrsantos-enviar input {
         margin-bottom: 50px;
     }
-    
-    
+
+
 }

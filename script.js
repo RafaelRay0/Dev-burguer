@@ -9,9 +9,15 @@ const buttonTradicion = document.querySelector('.button-tradicion')
 const buttonFilter = document.querySelector('.button-Filter')
 const descontCupom = document.querySelector('#send')
 const buttonbebidas = document.querySelector(".button-Bebidas")
+//MAPEAMENTOS MOBILE
 const abrirMenu = document.querySelector(".icon-list")
 const menu = document.querySelector(".menu-mobile")
 const overley = document.getElementById('overlay-menu')
+const cardatpioMobile = document.getElementById('button-Foreach')
+const buttonMobileTradi = document.getElementById('button-tradicion')
+const buttonMobileVegan = document.getElementById('button-Filter')
+const buttonMobileDrinks = document.getElementById('button-Bebidas')
+
 //CONVERT MOEDAS
 function newMoedas(newValor) {
 
@@ -20,7 +26,6 @@ function newMoedas(newValor) {
     return convert
 
 }
-
 //FOREACH
 function newCardapio(showAll) {
     let newformulare = ''
@@ -55,21 +60,21 @@ function newCardapio(showAll) {
 }
 
 //FILTER
-function filterTotal() {
+function filterTotal(newfilter) {
 
     const filtraçon = menuOptions.filter(number => number.vegan)
 
     newCardapio(filtraçon)
 }
 
-function drinks() {
+function drinks(newdrinks) {
 
     const bebidas = menuOptions.filter(drinks => drinks.drinks)
 
     newCardapio(bebidas)
 }
 
-function tradicion() {
+function tradicion(testes) {
     const tradicionais = menuOptions.filter(element => element.vegan === false)
 
     newCardapio(tradicionais)
@@ -93,8 +98,11 @@ buttonFor.addEventListener('click', () => newCardapio(menuOptions))
 buttonTradicion.addEventListener('click', tradicion)
 buttonFilter.addEventListener('click', filterTotal)
 buttonbebidas.addEventListener('click', drinks)
-
-
+// MOBILE
+cardatpioMobile.addEventListener('click', () => newCardapio(menuOptions))
+buttonMobileTradi.addEventListener('click', tradicion)
+buttonMobileVegan.addEventListener('click', filterTotal)
+buttonMobileDrinks.addEventListener('click', drinks)
 
 
 
