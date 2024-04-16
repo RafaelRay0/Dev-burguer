@@ -13,7 +13,6 @@ html {
 }
 
 body {
-
     background-image: url(img/download\ \(3\).jpg);
     background-attachment: fixed;
     background-size: cover;
@@ -92,7 +91,7 @@ header .pedidos button:hover {
 /* Menu Mobile */
 
 .menu-abrir img {
-    padding-right: 25px;
+    padding-right: 40px;
 }
 
 .menu-mobile {
@@ -153,7 +152,10 @@ header .pedidos button:hover {
 }
 
 /* CORPO */
-
+main {
+    height: 100%;
+    width: 100%;
+}
 .ul-li {
     list-style: none;
     display: grid;
