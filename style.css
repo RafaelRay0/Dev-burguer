@@ -152,10 +152,7 @@ header .pedidos button:hover {
 }
 
 /* CORPO */
-main {
-    height: 100%;
-    width: 100%;
-}
+
 .ul-li {
     list-style: none;
     display: grid;
@@ -174,7 +171,6 @@ main {
 }
 
 .order:hover {
-    transform: scale(1.05);
     transition: .2s;
     box-shadow: #04d6193e 0px 20px 30px -10px;
 }
