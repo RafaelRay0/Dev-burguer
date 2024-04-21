@@ -50,7 +50,7 @@ a {
 }
 
 span {
-    color: #0fe344;
+    color: #2a8e39;
 }
 
 .box-mascara {
@@ -74,6 +74,10 @@ video {
 
 @media screen and (max-width: 1080px) {
 
+    body {
+        background-image: url(img/Hambúrguer.jpeg);
+    }
+    
     video {
         display: none;
     }
