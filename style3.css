@@ -71,3 +71,11 @@ span {
 video {
     width: 100vw;
 }
+
+@media screen and (max-width: 1080px) {
+
+    video {
+        display: none;
+    }
+   
+}
