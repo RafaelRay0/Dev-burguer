@@ -60,7 +60,7 @@
    transform: scale(1.05);
    transition: .2s;
    opacity: .8;
-   box-shadow: #000 0px 20px 30px -10px;
+   background-color: rgb(134, 98, 7);
 }
 
 .button:active {

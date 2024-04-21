@@ -85,7 +85,10 @@ header .pedidos button {
 }
 
 header .pedidos button:hover {
-    box-shadow: 2px 2px 8px #000000c6;
+    transform: scale(1.05);
+    transition: .2s;
+    opacity: .8;
+    background-color: rgb(134, 98, 7);
 }
 
 /* Menu Mobile */
@@ -204,7 +207,7 @@ h1 {
 }
 
 span {
-    color: rgba(57, 20, 239, 0.884);
+    color: rgba(5, 88, 17, 0.884);
 }
 
 .item-descont {
